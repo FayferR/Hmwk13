@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/gmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:hint="Gmail"
+        android:textColorHint="@color/sera"
+        app:boxStrokeColor="#535252">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_gmail"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:inputType="text"
+            android:textColorHint="@color/white"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/theme"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:hint="Theme"
+        android:textColorHint="@color/sera"
+        app:boxStrokeColor="#535252">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_theme"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/send"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="200dp"
+        android:hint="Send"
+        android:textColorHint="@color/sera"
+        app:boxStrokeColor="#535252">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_send"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSent"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_marginHorizontal="16dp"
+        android:text="sent"
+        android:layout_marginBottom="200dp"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="375dp" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="next"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</LinearLayout>
